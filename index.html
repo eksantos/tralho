@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Vaga de Emprego</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
+</head>
+<body>
+
+	<header>
+		
+
+		<nav id="menu">
+			<ul id="ulMenu">
+				<li><a href="#">CADASTRE-SE</a></li>
+				<li id="ent"><a href="#" id="entre">ENTRE</a></li>
+			</ul>
+		</nav>
+		
+		<div id="logo">
+			<h1><img src="imgs/logo.png" alt="logo"></h1>
+		</div>
+
+		<nav id="main_menu">
+			<ul id="ulMain" >
+				<li><a href="#">VAGAS</a></li>
+				<li><a href="#">CURRÍCULO</a></li>
+				<li><a href="#">CANDIDATURAS</a></li>
+				<li><a href="#">EMPRESAS</a></li>
+				<li><a href="#">CURSOS</a></li>
+			</ul>
+			
+		</nav>
+
+	</header>
+
+	<div id="container">
+		<div id="chamadaVaga">
+			<h1>Analista Dba Sênior</h1>
+			<span><a href="#">EBIX LATIN AMERICA</a> | <a href="#">São Paulo, SP</a> - 1 vaga</span>
+			<p>Publicado em 16/03/2018</p>
+		</div>
+		<div id="colunaDi">
+			<h2>Dados da Vaga</h2>
+			<h3  class="h3colDi">Título da vaga</h3>
+			<p>Analista Dba Sênior</p>
+			<h3  class="h3colDi">Empresa</h3>
+			<a href="#">EBIX LATIN AMERICA</a>
+			<h3  class="h3colDi">Horário de Trabalho</h3>
+			<p>Período Integral</p>
+			<h3  class="h3colDi">Salário</h3>
+			<p>A combinar</p>
+			<h3  class="h3colDi">Localidade</h3>
+			<a href="#">São Paulo, SP</a>
+
+			<button type="button" class="butCad" id="openModal1">Cadastrar-se</button>
+		</div>
+		
+
+		<main>
+			<h2>Descrição</h2>
+
+			<p>Estamos buscando um profissional com conhecimentos de administração de banco de dados Oracle (validação de espaço disponível em table space, recompilação de objetos, criação de procedures, processos para manter a saúde do ambiente).</p>
+
+			<ul>
+				<li>Área e especialização profissional: Informática, TI, Telecomunicações - TI</li>
+				<li>Nível hierárquico: Analista</li>
+				<li>Local de trabalho: São Paulo, SP</li>
+				<li>Implementação e Administração de Bancos de Dados</li>
+				<li>Administração de servidores Linux</li>
+				<li>Linguagens de Programação: Shell Script, PERL, PHYTON e RUBY</li>
+				<li>Habilidades de negociação para participar de reuniões de projetos e com as áreas usuárias, tendo poder de tomada de decisão em relação aos itens discutidos</li>
+				<li>TEMPO DE CONTRATO: Indeterminado</li>
+				<li>HORÁRIO: Comercial</li>
+				<li>FORMAÇÃO ACADÊMICA: Superior completo em Tecnologia da Informação ou áreas correlatas</li>
+				<li>Inglês (Avançado)</li>
+			</ul>	
+
+			<h2>Exigências</h2>
+
+			<p>Experiência em pelo menos dois SGBDS diferentes. Conhecimento em banco de Dados Oracle versões 9/10 e 11, RMAN, Oracle Failsafe, Oracle RAC e ASM. Conhecimento básico em Windows e Sistemas Unix. Conhecimento básico em infraestrutura de rede TCP / IP. Desejável Certificação Oracle. Algum conhecimento em SQL Server será um plus.</p>
+
+			<h2>Dados da Empresa</h2>
+			<p>Somos uma empresa especializada em tecnologia de aceitação de cartões de crédito, débito e de benefícios. Formada por executivos com larga experiência nas áreas de tecnologia, varejo e internet, a nascemos com o objetivo de Inovar para Simplificar.</p>
+	
+		<div id="but">
+			<button type="button" class="butCad" id="openModal2">Cadastrar-se</button>
+		</div>
+		</main>
+		
+	
+		<div class="modal" id="janelaModal">
+			<form id="form" name="form" action="#" method="post" class="contModal">
+				<h3>Preencha abaixo para um cadastro de CV</h3>
+				<span id="obgt">Campos obrigatórios *</span>
+				<p>
+					<label for="name">Digite seu nome * </label><br/>
+	        		<input id="name" name="name" type="text" autocomplete="off" size="50" maxlength="50" required />
+				</p>
+
+				<p>
+					<label for="email">Digite seu email * </label><br/>
+	       			<input id="email" name="email" type="email" autocomplete="off" size="50" maxlength="64" required />
+				</p>
+
+				<p>
+					<label for="description">Mensagem * </label><br/>
+					<textarea id="description" name="description" rows="8" cols="80" required></textarea>
+				</p>
+			
+				<button class="butCad btnModal" type="submit" form="form" value="submit" id="enviar" onclick="validar()">Enviar</button>
+				<button class="butCad btnModal close" type="button" >Fechar</button>
+
+			</form>
+		</div>
+		
+		
+	</div>
+
+<footer role="contentinfo" id="rodape">
+	<div id="roCont">
+		<ul id="opcCand" class="infoRodape">
+			<li>Candidatos</li>
+			<li><a href="#">Buscar Vagas</a></li>
+			<li><a href="#">Candidaturas</a></li>
+			<li><a href="#">Ajuda</a></li>
+		</ul>
+
+		<ul id="opcEmp" class="infoRodape">
+			<li>Empresas</li>
+			<li><a href="#">Anunciar vagas de emprego</a></li>
+			<li><a href="#">Busque candidatos</a></li>
+			<li><a href="#">Ajuda para empresas</a></li>
+		</ul>
+
+		<ul id="opcInst" class="infoRodape">
+			<li>Institucional</li>
+			<li><a href="#">Quem somos</a></li>
+			<li><a href="#">Termos e condições de uso</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+		<ul class="infoRodape" id="sociais">
+			<li>Mídia sociais</li>
+			<li><a href="#">Linkedin</a></li>
+			<li><a href="#">Twitter</a></li>
+			<li><a href="#">Youtube</a></li>
+		</ul>
+			
+	</div>
+</footer>
+
+<script type="text/javascript" src="js/js.js"></script>
+</body>
+</html>
